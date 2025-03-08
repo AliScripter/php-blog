@@ -1,7 +1,9 @@
 <?php
 
-include (__DIR__ . "/../config.php");
-include (__DIR__ . "/../db.php");
+include(__DIR__ . "/../config.php");
+include(__DIR__ . "/../db.php");
+
+$path = $_SERVER['REQUEST_URI'];
 
 ?>
 
@@ -23,7 +25,11 @@ include (__DIR__ . "/../db.php");
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
         crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <?php if (str_contains($path, 'pages')) : ?>
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+    <?php else : ?>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    <?php endif ?>
 </head>
 
 <body>

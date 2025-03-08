@@ -36,7 +36,7 @@ if (isset($_GET['category'])) {
               <div class="col-sm-6">
                 <div class="card h-100">
                   <img
-                    src="./uploads/posts/<?= $post['image'] ?>"
+                    src="../uploads/posts/<?= $post['image'] ?>"
                     class="card-img-top"
                     alt="post-image" />
                   <div class="card-body">

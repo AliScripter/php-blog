@@ -1,3 +1,9 @@
+<?php
+$path = $_SERVER['REQUEST_URI'];
+
+?>
+
+
 <div
     class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
     <div
@@ -17,8 +23,8 @@
             <ul class="nav flex-column pe-3">
                 <li class="nav-item">
                     <a
-                        class="nav-link link-body-emphasis text-decoration-none d-flex align-items-center gap-2 text-secondary"
-                        href="index.html">
+                        class="nav-link link-body-emphasis text-decoration-none d-flex align-items-center gap-2 <?= str_contains($path, 'pages') ? '' : 'text-secondary' ?>"
+                        href="/php_blog_project/admin/index.php">
                         <i
                             class="bi bi-house-fill fs-4 text-secondary"></i>
                         <span class="fw-bold">داشبورد</span>
@@ -27,8 +33,8 @@
 
                 <li class="nav-item">
                     <a
-                        class="nav-link link-body-emphasis text-decoration-none d-flex align-items-center gap-2"
-                        href="./pages/posts/index.html">
+                        class="nav-link link-body-emphasis text-decoration-none d-flex align-items-center gap-2 <?= str_contains($path, 'posts') ? 'text-secondary' : '' ?>"
+                        href="/php_blog_project/admin/pages/posts/index.php">
                         <i
                             class="bi bi-file-earmark-image-fill fs-4 text-secondary"></i>
                         <span class="fw-bold">مقالات</span>
