@@ -59,7 +59,7 @@ $posts = $db->query("SELECT * FROM posts ORDER BY id DESC ;");
 
                                         <td>
                                             <a
-                                                href="./edit.html"
+                                                href="./edit.php?id=<?= $post['id'] ?>"
                                                 class="btn btn-sm btn-outline-dark">ویرایش</a>
                                             <a
                                                 href="index.php?action=delete&id=<?= $post['id'] ?>"
