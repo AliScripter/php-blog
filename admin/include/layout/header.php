@@ -1,9 +1,19 @@
 <?php
+session_start();
 
 include(__DIR__ . "/../config.php");
 include(__DIR__ . "/../db.php");
 
 $path = $_SERVER['REQUEST_URI'];
+
+if (!isset($_SESSION['email'])) {
+    if (str_contains($path, 'pages')) {
+        header("Location:../auth/login.php?err_msg=Login Please");
+    } else {
+        header("Location:./pages/auth/login.php?err_msg=Login Please");
+    }
+    exit();
+}
 
 ?>
 
