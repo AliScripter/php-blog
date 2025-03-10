@@ -54,8 +54,8 @@ $path = $_SERVER['REQUEST_URI'];
 
                 <li class="nav-item">
                     <a
-                        class="nav-link link-body-emphasis text-decoration-none d-flex align-items-center gap-2"
-                        href="./pages/comments/index.html">
+                        class="nav-link link-body-emphasis text-decoration-none d-flex align-items-center gap-2 <?= str_contains($path, 'comments') ? 'text-secondary' : '' ?>"
+                        href="/php_blog_project/admin/pages/comments/index.php">
                         <i
                             class="bi bi-chat-left-text-fill fs-4 text-secondary"></i>
 

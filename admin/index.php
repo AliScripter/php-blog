@@ -71,7 +71,7 @@ $categories = $db->query("SELECT * FROM categories ORDER BY id DESC");
                                         <td><?= $post['author'] ?></td>
                                         <td>
                                             <a
-                                                href="#"
+                                                href="./pages/posts/edit.php?id=<?= $post['id'] ?>"
                                                 class="btn btn-sm btn-outline-dark">ویرایش</a>
                                             <a
                                                 href="index.php?entity=post&action=delete&id=<?= $post['id'] ?>"
@@ -165,7 +165,7 @@ $categories = $db->query("SELECT * FROM categories ORDER BY id DESC");
                                         </td>
                                         <td>
                                             <a
-                                                href="#"
+                                                href="./pages/categories/edit.php?id=<?= $category['id'] ?>"
                                                 class="btn btn-sm btn-outline-dark">ویرایش</a>
                                             <a
                                                 href="index.php?entity=category&action=delete&id=<?= $category['id'] ?>"
