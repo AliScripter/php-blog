@@ -1,19 +1,5 @@
 <?php
 $sliders = $db->query("SELECT * FROM posts_slider");
-
-// print "<pre />";
-// print_r($sliders->fetchAll());
-
-// foreach ($sliders as $slider) {
-//     $postID = ($slider['post_id']);
-//     $post = $db->query("SELECT * FROM posts WHERE id = $postID ");
-
-
-// print "<pre />";
-// print_r($post->fetchAll());
-// }
-
-
 ?>
 
 <!-- Slider Section -->
@@ -38,7 +24,6 @@ $sliders = $db->query("SELECT * FROM posts_slider");
         </div>
 
         <!-- Slide  -------------->
-
         <div class="carousel-inner rounded">
             <?php if ($sliders->rowCount() > 0) : ?>
                 <?php foreach ($sliders as $slide) : ?>
@@ -48,7 +33,7 @@ $sliders = $db->query("SELECT * FROM posts_slider");
                     ?>
                     <div class="carousel-item overlay carousel-height <?= ($slide['active'] ? 'active' : '') ?>">
                         <img
-                            src="./uploads/posts/<?= $post['image'] ?>"
+                            src="../uploads/posts/<?= $post['image'] ?>"
                             class="d-block w-100"
                             alt="post-image" />
                         <div class="carousel-caption d-none d-md-block">

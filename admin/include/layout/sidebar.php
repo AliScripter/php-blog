@@ -1,8 +1,6 @@
 <?php
 $path = $_SERVER['REQUEST_URI'];
-
 ?>
-
 
 <div
     class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">

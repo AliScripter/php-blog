@@ -1,9 +1,3 @@
-<?php
-
-?>
-
-
-<!-- Footer Section -->
 <footer class="text-center pt-4 my-md-5 pt-md-5 border-top">
     <div class="row flex-column">
         <div>
@@ -19,7 +13,6 @@
     </div>
 </footer>
 </div>
-
 
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

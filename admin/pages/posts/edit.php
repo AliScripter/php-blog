@@ -58,8 +58,6 @@ if (isset($_POST['editPost'])) {
         exit();
     }
 }
-
-
 ?>
 
 <div class="container-fluid">

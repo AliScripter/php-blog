@@ -69,12 +69,3 @@ if (isset($_GET['search'])) {
 <?php
 include "./include/layout/footer.php";
 ?>
-
-<style>
-    .card img {
-        height: 200px;
-        object-fit: cover;
-        object-position: center center;
-        overflow: hidden;
-    }
-</style>

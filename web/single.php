@@ -69,7 +69,6 @@ if (isset($_GET['post'])) {
 
                         <!-- Comment Section -->
                         <div class="col">
-
                             <?php
                             $invalidInputName = null;
                             $invalidInputComment = null;
@@ -92,8 +91,6 @@ if (isset($_GET['post'])) {
                                 }
                             }
                             ?>
-
-
                             <!-- Comment Form -->
                             <div class="card">
                                 <div class="card-body">
@@ -133,10 +130,8 @@ if (isset($_GET['post'])) {
                                     </form>
                                 </div>
                             </div>
-
                             <hr class="mt-4" />
                             <!-- Comment Content -->
-
                             <?php
                             $comments = $db->prepare("SELECT * FROM comments WHERE post_id = :id AND status = 1 ;");
                             $comments->execute(['id' => $postId])

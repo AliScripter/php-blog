@@ -1,7 +1,6 @@
 <?php
 include "../../include/layout/header.php";
 
-
 if (isset($_GET['action']) && isset($_GET['id'])) {
     $id = $_GET['id'];
 
@@ -11,9 +10,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
     header("Location:index.php");
     exit();
 }
-
 $posts = $db->query("SELECT * FROM posts ORDER BY id DESC ;");
-
 ?>
 
 <div class="container-fluid">
@@ -50,13 +47,11 @@ $posts = $db->query("SELECT * FROM posts ORDER BY id DESC ;");
                                 </tr>
                             </thead>
                             <tbody>
-
                                 <?php foreach ($posts as $post) : ?>
                                     <tr>
                                         <th><?= $post['id'] ?></th>
                                         <td><?= $post['title'] ?></td>
                                         <td><?= $post['author'] ?></td>
-
                                         <td>
                                             <a
                                                 href="./edit.php?id=<?= $post['id'] ?>"

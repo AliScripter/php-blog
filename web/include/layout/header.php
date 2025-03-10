@@ -2,11 +2,8 @@
 include "./include/config.php";
 include "./include/db.php";
 
+
 $categories = $db->query("SELECT * FROM categories");
-
-// print "<pre>";
-// print_r($categories->fetchAll());
-
 ?>
 
 <!DOCTYPE html>

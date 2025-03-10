@@ -14,9 +14,7 @@ if (!isset($_SESSION['email'])) {
     }
     exit();
 }
-
 ?>
-
 
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">

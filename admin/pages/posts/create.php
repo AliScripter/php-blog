@@ -26,8 +26,8 @@ if (isset($_POST['addPost'])) {
     }
 }
 
+// ! Check for post to DB
 if (
-    // ! Check for post to DB
     !empty(trim($_POST['title'])) &&
     !empty(trim($_POST['author'])) &&
     !empty(trim($_FILES['image']['name'])) &&
@@ -37,7 +37,6 @@ if (
     $author = $_POST['author'];
     $body = $_POST['body'];
     $categoryId = $_POST['categoryId'];
-
 
     $tempName = $_FILES['image']['tmp_name'];
     $imageName = time() . "_" .  $_FILES['image']['name'];
@@ -52,7 +51,6 @@ if (
         print "Upload Failed , Try Again Later";
     }
 }
-
 ?>
 
 <div class="container-fluid">

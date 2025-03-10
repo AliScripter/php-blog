@@ -12,7 +12,6 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
 }
 
 $categories = $db->query("SELECT * FROM categories ORDER BY id DESC ;");
-
 ?>
 
 <div class="container-fluid">

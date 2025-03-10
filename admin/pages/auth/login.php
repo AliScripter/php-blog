@@ -4,7 +4,6 @@ session_start();
 include("../../include/config.php");
 include("../../include/db.php");
 
-
 $invalidInputEmail = null;
 $invalidInputPassword = null;
 
@@ -29,11 +28,10 @@ if (isset($_POST['login'])) {
             exit();
         }
 
-        header("Location:login.php?err_msg=error404 : Admin Not Found");
+        header("Location:login.php?err_msg=error 404 : Admin Not Found");
         exit();
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -54,13 +52,13 @@ if (isset($_POST['login'])) {
         <form method="POST">
             <div class="fs-2 fw-bold text-center mb-4">webprog.io</div>
             <?php if (isset($_GET['err_msg'])): ?>
-                <div class="alert alert-sm alert-danger text-align-left">
-                    <?= $_GET['err_msg'] ?>
+                <div class="alert alert-sm alert-danger text-start ltr">
+                    <?= urldecode($_GET['err_msg']) ?>
                 </div>
             <?php endif ?>
             <div class="mb-3">
                 <label class="form-label">ایمیل</label>
-                <input type="email" name="email" class="form-control" autocomplete="email" />
+                <input type="email" name="email" class="form-control" autocomplete="email" value="admin@gmail.com" placeholder="admin@gmail.com" />
                 <div class="form-text text-danger">
                     <?= $invalidInputEmail ?>
                 </div>
@@ -68,7 +66,7 @@ if (isset($_POST['login'])) {
 
             <div class="mb-3">
                 <label class="form-label">رمز عبور</label>
-                <input type="password" name="password" class="form-control" autocomplete="current-password" />
+                <input type="password" name="password" class="form-control" autocomplete="current-password" value="admin" placeholder="admin" />
                 <div class="form-text text-danger">
                     <?= $invalidInputPassword ?>
                 </div>
@@ -83,10 +81,3 @@ if (isset($_POST['login'])) {
 </body>
 
 </html>
-
-<!--TODO : Change This style with bootstrap class -->
-<style>
-    .text-align-left {
-        text-align: left;
-    }
-</style>

@@ -9,9 +9,6 @@ if (isset($_GET['category'])) {
 } else {
   $posts = $db->query("SELECT * FROM posts ORDER BY id DESC ;");
 }
-
-// $posts = $db->query("SELECT * FROM posts ORDER BY id DESC ;");
-
 ?>
 
 <main>
@@ -66,9 +63,7 @@ if (isset($_GET['category'])) {
           <?php else : ?>
             <div class="col">
               <div class="alert alert-danger">
-                <h3>
-                  مقاله ای یافت نشد
-                </h3>
+                مقاله ای یافت نشد
               </div>
             </div>
           <?php endif ?>
@@ -87,12 +82,3 @@ if (isset($_GET['category'])) {
 <?php
 include "./include/layout/footer.php";
 ?>
-
-<style>
-  .card img {
-    height: 200px;
-    object-fit: cover;
-    object-position: center center;
-    overflow: hidden;
-  }
-</style>

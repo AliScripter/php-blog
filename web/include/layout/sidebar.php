@@ -1,6 +1,5 @@
 <?php
 $categories = $db->query("SELECT * FROM categories");
-
 ?>
 
 <!-- Sidebar Section -->

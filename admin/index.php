@@ -1,8 +1,6 @@
 <?php
 include "./include/layout/header.php";
 
-// index.php?entity=comment&action=approve&id=1
-
 if (isset($_GET['entity']) && isset($_GET['action']) && isset($_GET['id'])) {
     $entity = $_GET['entity'];
     $action = $_GET['action'];
