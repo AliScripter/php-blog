@@ -45,7 +45,6 @@ if (isset($_POST['editPost'])) {
                 $postUpdate = $db->prepare("UPDATE posts SET title =:title,author=:author, category_id=:categoryId, body=:body,image=:image WHERE id=:id");
 
                 $postUpdate->execute(['title' => $title, 'author' => $author, 'categoryId' => $categoryId, 'body' => $body, 'image' => $imageName, 'id' => $postId]);
-
             } else {
                 print "Upload Failed , Try Again Later";
             }
