@@ -44,7 +44,7 @@ This project uses **MySQL** as the database to store information.
 1. **Clone the project**:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/AliScripter/php-blog
    ```
 
 2. **Create the database**:
