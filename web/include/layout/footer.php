@@ -1,14 +1,13 @@
 <footer class="text-center pt-4 my-md-5 pt-md-5 border-top">
     <div class="row flex-column">
         <div>
-            <p class="">
-                کلیه حقوق محتوا این سایت متعلق به وب سایت webprog.io میباشد
+            <p lang="En" dir="ltr">
+                © 2025 AliScripter. All rights reserved.
             </p>
         </div>
         <div>
-            <a href="#"><i class="bi bi-telegram fs-3 text-secondary ms-2"></i></a>
-            <a href="#"><i class="bi bi-whatsapp fs-3 text-secondary ms-2"></i></a>
-            <a href="#"><i class="bi bi-instagram fs-3 text-secondary"></i></a>
+            <a href="https://github.com/AliScripter"><i class="bi bi-github fs-3 text-secondary ms-2"></i></a>
+            <a href="http://linkedin.com/in/AliScripter"><i class="bi bi-linkedin fs-3 text-secondary ms-2"></i></a>
         </div>
     </div>
 </footer>

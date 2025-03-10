@@ -22,7 +22,15 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>php tutorial || blog project || webprog.io</title>
+    <!-- Showing in shocial network -->
+    <meta property="og:title" content="Tech Line Admin Panel" />
+    <meta property="og:description" content="پنل اختصاصی مدیریت محتوای مجله تک‌لاین" />
+    <meta property="og:image" content="../../assets/images/logo.jpg" />
+    <meta property="og:type" content="website" />
+
+    <title>
+        Tech Line Admin Panel
+    </title>
 
     <link
         rel="stylesheet"
@@ -35,8 +43,10 @@ if (!isset($_SESSION['email'])) {
 
     <?php if (str_contains($path, 'pages')) : ?>
         <link rel="stylesheet" href="../../assets/css/style.css" />
+        <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
     <?php else : ?>
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
     <?php endif ?>
 </head>
 

@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   font-family: "Vazir", sans-serif;
 }
-.card img {
+.custome_img img{
   height: 200px !important;
   object-fit: cover !important;
   object-position: center center !important;

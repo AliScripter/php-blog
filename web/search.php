@@ -30,7 +30,7 @@ if (isset($_GET['search'])) {
                             $postCategory = $db->query("SELECT * FROM categories WHERE id = $categoryId")->fetch();
                             ?>
                             <div class="col-sm-6">
-                                <div class="card h-100">
+                                <div class="card h-100 custome_img">
                                     <img src="../uploads/posts/<?= $post['image'] ?>" class="card-img-top" alt="post-image" />
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between">
