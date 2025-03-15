@@ -2,6 +2,9 @@
 
 This is a simple blog built with **PHP**, **MySQL**, and **Bootstrap**. This project allows you to set up a basic blog with various features.
 
+[ٰVisite the website](https://devnest.space/web/) 
+**Online until:** June 13, 2025 (Friday)  
+
 ## Features
 
 ### **Home Page**
